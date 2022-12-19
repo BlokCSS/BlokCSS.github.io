@@ -358,8 +358,8 @@
     justify-content: center;
     overflow: hidden;
     margin-bottom: 1.5rem;
-    width: clamp(10rem, 10vw + 20rem, 7rem);
-    height: clamp(2rem, 10vh + 20rem, 2.5rem);
+    width: clamp(10rem, 10vw + 20rem, 10rem);
+    height: clamp(2rem, 10vh + 20rem, 5rem);
 }
 
 .brutalist a{
