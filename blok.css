@@ -106,7 +106,7 @@ section {
 }
 
 main {
-    max-width: 75rem;
+    max-width: 120rem;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -132,7 +132,7 @@ a:hover {
 }
 
 p {
-    line-height: 1.6;
+    line-height: 2;
     font-family: "Poppins";
     margin-top: 0;
     margin-bottom: 1rem;
