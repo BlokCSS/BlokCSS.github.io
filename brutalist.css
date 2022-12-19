@@ -57,7 +57,7 @@
         --font-size-xl: 1.95rem;
         --font-size-xxl: 2.44rem;
         --font-size-xxxl: 3.05rem;
-        
+
     }
 
     @media screen and (min-width: 1280px) {
@@ -111,19 +111,19 @@
 /**   FONT CLASSES   */
 /**                  */
 /**==================*/
-.display-title{
+.display-title {
     font-size: clamp(1rem, 4vw + 2.5rem, 10rem);
 }
 
-.display-subtitle{
+.display-subtitle {
     font-size: clamp(1rem, 2vw + 2.5rem, 10rem);
 }
 
-.display-md{
+.display-md {
     font-size: clamp(1rem, 2.5vw + 0.5rem, 2.5rem);
 }
 
-.display-sm{
+.display-sm {
     font-size: clamp(1rem, 0.7vw + 0.5rem, 2rem);
 }
 
@@ -212,7 +212,7 @@
     background-color: #ffff00;
 }
 
-.bs-bgBlack{
+.bs-bgBlack {
     background-color: #000000;
 }
 
@@ -239,31 +239,31 @@
 .brutalist-nav1 {
     border-style: solid;
     border-color: rgb(31, 28, 28);
-    border-width: 20px 15px 5px 15px;
+    border-width: 5px 10px 12px 10px;
     display: flex;
     padding-inline: 0.5rem;
-    gap: 1.5rem;
+    gap: 1rem;
     margin: 1rem;
 }
 
 .brutalist-nav2 {
     border-style: solid;
     border-color: rgb(31, 28, 28);
-    border-width: 3px 3px 10px 15px;
+    border-width: 15px 5px 5px 5px;
     border-radius: 100px;
     display: flex;
-    padding-inline: 0.5rem;
-    gap: 1.5rem;
+    padding-inline: 1.5rem;
+    gap: 1rem;
     margin: 1rem;
 }
 
 .brutalist-nav3 {
     border-style: solid;
     border-color: rgb(31, 28, 28);
-    border-width: 3px 15px 15px 3px;
+    border-width: 5px 5px 15px 5px;
     border-radius: 100px;
     display: flex;
-    padding-inline: 0.5rem;
+    padding-inline: 1.5rem;
     gap: 1.5rem;
     margin: 1rem;
 }
@@ -271,7 +271,7 @@
 .brutalist-nav4 {
     border-style: solid;
     border-color: rgb(31, 28, 28);
-    border-width: 5px 20px 15px 12px;
+    border-width: 12px 10px 5px 10px;
     display: flex;
     padding-inline: 0.5rem;
     gap: 1.5rem;
@@ -310,17 +310,18 @@
     font-size: var(--font-size-base);
 }
 
-@media (width >= 1440px) {
-.brutalist-nav1 a,
-.brutalist-nav2 a,
-.brutalist-nav3 a,
-.brutalist-nav4 a,
-.brutalist-nav5 a,
-.brutalist-nav6 a {
-    font-family: var(--brutalist_Bungee);
-    font-size: var(--font-size-xl);
-   
-}    
+@media (width >=1440px) {
+
+    .brutalist-nav1 a,
+    .brutalist-nav2 a,
+    .brutalist-nav3 a,
+    .brutalist-nav4 a,
+    .brutalist-nav5 a,
+    .brutalist-nav6 a {
+        font-family: var(--brutalist_Bungee);
+        font-size: var(--font-size-xl);
+
+    }
 }
 
 .brutalist-nav2 a:hover,
@@ -359,15 +360,15 @@
     overflow: hidden;
     margin-bottom: 1.5rem;
     width: 10rem;
-    
+
 }
 
-.brutalist a{
-    display: inline-block;  
-    position: relative;  
-    z-index: 1;  
-    padding: 1.7rem;  
-    margin: -1.5rem; 
+.brutalist a {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 1.7rem;
+    margin: -1.5rem;
     font-size: var(--font-size-sm);
 
 }
@@ -420,9 +421,8 @@
 /**                    */
 /**====================*/
 
-.brutalist-panel{
-    border: 5px solid black;
-    border-radius: 1px 50px;
+.brutalist-panel {
+    border: 3px solid black;
     padding: 1rem;
     margin-bottom: 1rem;
 
@@ -483,47 +483,49 @@
 /**              */
 /**==============*/
 
-.stroke-red{
-    -webkit-text-stroke: 1px  red;
+.stroke-red {
+    -webkit-text-stroke: 1px red;
 }
 
-.stroke-cyan{
+.stroke-cyan {
     -webkit-text-stroke: 1px cyan;
 }
 
-.border2{
+.border2 {
     border: 2px solid black
 }
 
-.border4{
+.border4 {
     border: 4px solid black;
 }
 
-.marquee{
-  white-space: nowrap;
-  border: 3px solid black;
-  display: block;
-  font-family: var(--brutalist_Bungee);
-  overflow: hidden;
+.marquee {
+    white-space: nowrap;
+    border: 3px solid black;
+    display: block;
+    font-family: var(--brutalist_Bungee);
+    overflow: hidden;
+    padding: 0.5rem;
+    word-spacing: 1rem;
 }
 
-.marquee span{
+.marquee span {
     display: inline-block;
     padding-left: 100%;
     animation: scroll 10s linear infinite;
-    
+
 }
 
 @keyframes scroll {
-    0%{
+    0% {
         transform: translate(-100%, 0);
     }
 
-    100%{
+    100% {
         transform: translate(0, 0);
     }
 }
-    
+
 
 
 /**==============*/
