@@ -358,8 +358,7 @@
     justify-content: center;
     overflow: hidden;
     margin-bottom: 1.5rem;
-    width: clamp(10rem, 1vw + 2rem, 10rem);
-    height: clamp(2rem, 1vh + 2rem, 3.5rem);
+    
 }
 
 .brutalist a{
@@ -368,7 +367,7 @@
     z-index: 1;  
     padding: 1rem;  
     margin: -1.5rem; 
-    font-size: var(--font-size-base);
+
 }
 
 .brutalist a:hover {
