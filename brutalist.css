@@ -1,0 +1,516 @@
+/**==============================================================================================*/
+/**==============================================================================================*/
+/**                                                                                              */
+/**                   +                       N E U E                        +                   */
+/**                 +++++                    BRUTALIST                     +++++                 */
+/**                   +                                                      +                   */
+/**                   +                                                      +                   */
+/**                   +                                                      +                   */
+/**                       You can write your own custom and new properties,                      */
+/**                       but I suggest to follow the  semantic rules that                       */
+/**                       I write for you to have an easy understanding on                       */
+/**                       how to apply it properly. Thank for give me this                       */
+/**                       opportunity to decorate your creativity. You are                       */
+/**                       the creativity. Im your tool. Dont be genius. Be                       */
+/**                       BLOK.                                                                  */
+/**                                                                                              */
+/**                                                                                              */
+/**==============================================================================================*/
+
+
+/**===============*/
+/**               */
+/**   VARIABLES   */
+/**               */
+/**===============*/
+
+:root {
+
+    /* F O N T S */
+    --brutalist_Bungee: Bungee-Regular;
+    --brutalist_Mixal: Mixal-Heavy;
+    --brutalist_Kalendar: KalendarblattGrotesk;
+    --brutalist_RammettoOne-Regular: RammettoOne-Regular;
+    --brutalist_KellySlab: KellySlab-Regular;
+}
+
+/* Fluid font size variables, for browsers that support clamp */
+@supports (font-size: clamp(1rem, 1vw, 1rem)) {
+    :root {
+        --font-size-sm: clamp(0.8rem, -0.18vw + 0.84rem, 0.7rem);
+        --font-size-base: clamp(1rem, -0.11vw + 1.03rem, 0.94rem);
+        --font-size-md: clamp(1.25rem, 0vw + 1.25rem, 1.25rem);
+        --font-size-lg: clamp(1.56rem, 0.19vw + 1.52rem, 1.67rem);
+        --font-size-xl: clamp(1.95rem, 0.49vw + 1.83rem, 2.22rem);
+        --font-size-xxl: clamp(2.44rem, 0.94vw + 2.21rem, 2.96rem);
+        --font-size-xxxl: clamp(3.05rem, 1.63vw + 2.65rem, 3.95rem);
+    }
+}
+
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+    :root {
+        --font-size-sm: 0.8rem;
+        --font-size-base: 1rem;
+        --font-size-md: 1.25rem;
+        --font-size-lg: 1.56rem;
+        --font-size-xl: 1.95rem;
+        --font-size-xxl: 2.44rem;
+        --font-size-xxxl: 3.05rem;
+        
+    }
+
+    @media screen and (min-width: 1280px) {
+        :root {
+            --font-size-sm: 0.7rem;
+            --font-size-base: 0.94rem;
+            --font-size-md: 1.25rem;
+            --font-size-lg: 1.67rem;
+            --font-size-xl: 2.22rem;
+            --font-size-xxl: 2.96rem;
+            --font-size-xxxl: 3.95rem;
+        }
+    }
+}
+
+/**===============*/
+/**               */
+/**   ADD FONTS   */
+/**               */
+/**===============*/
+
+
+@font-face {
+    font-family: Bungee-Regular;
+    src: url(src/fonts/Bungee-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mixal-Heavy;
+    src: url(src/fonts/Mixal-Heavy.otf);
+}
+
+@font-face {
+    font-family: KalendarblattGrotesk;
+    src: url(src/fonts/KalenderblattGrotesk.ttf);
+}
+
+@font-face {
+    font-family: RammettoOne-Regular;
+    src: url(src/fonts/RammettoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: KellySlab-Regular;
+    src: url(src/fonts/KellySlab-Regular.ttf);
+}
+
+
+/**==================*/
+/**                  */
+/**   FONT CLASSES   */
+/**                  */
+/**==================*/
+.display-title{
+    font-size: clamp(1rem, 4vw + 2.5rem, 10rem);
+}
+
+.display-subtitle{
+    font-size: clamp(1rem, 2vw + 2.5rem, 10rem);
+}
+
+.display-md{
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 2.5rem);
+}
+
+.display-sm{
+    font-size: clamp(1rem, 0.7vw + 0.5rem, 2rem);
+}
+
+.bs-fontBungee {
+    font-family: var(--brutalist_Bungee);
+}
+
+.bs-fontMixal {
+    font-family: var(--brutalist_Mixal);
+    letter-spacing: 0.2rem;
+}
+
+.bs-fontKalendar {
+    font-family: var(--brutalist_Kalendar);
+}
+
+.bs-fontRammetto {
+    font-family: var(--brutalist_RammettoOne-Regular);
+}
+
+.bs-fontKelly {
+    font-family: var(--brutalist_KellySlab);
+}
+
+/**=================*/
+/**                 */
+/**   FONT COLOR    */
+/**                 */
+/**=================*/
+.bs-fontYellow {
+    color: #ffff00;
+}
+
+.bs-fontRed {
+    color: #ff0534;
+}
+
+.bs-fontCyan {
+    color: #00FFFF;
+}
+
+.bs-fontPink {
+    color: #FF00FF;
+}
+
+.bs-fontPurple {
+    color: #9D00FF;
+}
+
+.bs-fontGreen {
+    color: #a7fd2a;
+}
+
+.bs-fontBlack {
+    color: rgb(0, 0, 0);
+}
+
+
+/**===============*/
+/**               */
+/**  BACKGROUND   */
+/**    COLOR      */
+/**               */
+/**===============*/
+.bs-bgPurple {
+    background-color: #c501e2;
+}
+
+.bs-bgGreen {
+    background-color: #a7fd2a;
+}
+
+.bs-bgRed {
+    background-color: #ff0534;
+}
+
+.bs-bgPink {
+    background-color: #FF00FF;
+}
+
+.bs-bgCyan {
+    background-color: #00FFFF;
+}
+
+.bs-bgYellow {
+    background-color: #ffff00;
+}
+
+.bs-bgBlack{
+    background-color: #000000;
+}
+
+/* COLOR FOR LOGO */
+.bs-bgGolden {
+    background-color: #FCC419;
+}
+
+.bs-bgBlue {
+    background-color: #339AF0;
+}
+
+.bs-bgViolet {
+    background-color: #CC5DE8;
+}
+
+
+/**===================*/
+/**                   */
+/** NAVBAR CONCEPTO   */
+/**                   */
+/**===================*/
+
+.brutalist-nav1 {
+    border-style: solid;
+    border-color: rgb(31, 28, 28);
+    border-width: 20px 15px 5px 15px;
+    display: flex;
+    padding-inline: 0.5rem;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.brutalist-nav2 {
+    border-style: solid;
+    border-color: rgb(31, 28, 28);
+    border-width: 3px 3px 10px 15px;
+    border-radius: 100px;
+    display: flex;
+    padding-inline: 0.5rem;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.brutalist-nav3 {
+    border-style: solid;
+    border-color: rgb(31, 28, 28);
+    border-width: 3px 15px 15px 3px;
+    border-radius: 100px;
+    display: flex;
+    padding-inline: 0.5rem;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.brutalist-nav4 {
+    border-style: solid;
+    border-color: rgb(31, 28, 28);
+    border-width: 5px 20px 15px 12px;
+    display: flex;
+    padding-inline: 0.5rem;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.brutalist-nav5 {
+    border-style: solid;
+    border-color: rgb(31, 28, 28);
+    border-width: 3px 10px 10px 1px;
+    border-radius: 5px 50px;
+    display: flex;
+    padding-inline: 0.5rem;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.brutalist-nav6 {
+    border-style: solid;
+    border-color: rgb(31, 28, 28);
+    border-width: 3px 1px 10px 10px;
+    border-radius: 50px 5px;
+    display: flex;
+    padding-inline: 0.5rem;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.brutalist-nav1 a,
+.brutalist-nav2 a,
+.brutalist-nav3 a,
+.brutalist-nav4 a,
+.brutalist-nav5 a,
+.brutalist-nav6 a {
+    font-family: var(--brutalist_Bungee);
+    font-size: var(--font-size-base);
+}
+
+@media (width >= 1440px) {
+.brutalist-nav1 a,
+.brutalist-nav2 a,
+.brutalist-nav3 a,
+.brutalist-nav4 a,
+.brutalist-nav5 a,
+.brutalist-nav6 a {
+    font-family: var(--brutalist_Bungee);
+    font-size: var(--font-size-xl);
+   
+}    
+}
+
+.brutalist-nav2 a:hover,
+.brutalist-nav3 a:hover {
+    text-decoration: line-through;
+    color: rgb(207, 39, 230);
+}
+
+.brutalist-nav5 a:hover,
+.brutalist-nav6 a:hover {
+    text-decoration: underline;
+    color: rgb(207, 39, 230)
+}
+
+.brutalist-nav1 a:hover,
+.brutalist-nav4 a:hover {
+    color: aliceblue;
+    background-color: black;
+    border-radius: 44px;
+    padding-inline: 0.5rem;
+}
+
+/**=======================*/
+/**                       */
+/**   BUTTONS CONCEPTO    */
+/**                       */
+/**=======================*/
+
+.brutalist {
+    border: 3px solid black;
+    font-family: var(--brutalist_RammettoOne-Regular);
+    box-shadow: 6px 5px;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.brutalist a{
+    display: inline-block;  
+    position: relative;  
+    z-index: 1;  
+    padding: 2rem;  
+    margin: -1.5rem; 
+    font-size: var(--font-size-base);
+}
+
+.brutalist a:hover {
+    color: black;
+    text-decoration: none;
+    -webkit-text-stroke: 1px;
+}
+
+.btn-gold {
+    background-color: #fec859;
+}
+
+.btn-red {
+    background-color: #FD1C03;
+}
+
+.btn-yellow {
+    background-color: #FFFF33;
+}
+
+.btn-pink {
+    background-color: #FF00FF;
+}
+
+.btn-purple {
+    background-color: #9D00FF;
+}
+
+.btn-green {
+    background-color: #a7fd2a;
+}
+
+.btn-cyan {
+    background-color: #00FFFF;
+}
+
+.brutalist:hover {
+    background-color: #00FFFF;
+}
+
+.btn-cyan:hover {
+    background-color: #a7fd2a;
+}
+
+/**====================*/
+/**                    */
+/**   PANEL CONCEPT0   */
+/**                    */
+/**====================*/
+
+.brutalist-panel{
+    border: 5px solid black;
+    border-radius: 1px 50px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.bs-panel-right {
+    border: 3px solid black;
+    padding: 0.5rem;
+    box-shadow: 9px 7px 2px #000000;
+    margin: 1rem;
+}
+
+.bs-panel-left {
+    padding: 0.5rem;
+    border: 3px solid black;
+    box-shadow: -9px 9px 2px black;
+    margin: 1rem;
+}
+
+.bs-panel-bottom {
+    padding: 0.5rem;
+    border: 3px solid black;
+    box-shadow: 0px 10px black;
+    margin: 1rem;
+}
+
+.bs-panel-top {
+    padding: 0.5rem;
+    border: 3px solid black;
+    box-shadow: 0px -10px black;
+    margin: 1rem;
+}
+
+.bs-panel-top-left {
+    padding: 0.5rem;
+    border: 3px solid black;
+    box-shadow: -9px -9px 2px black;
+    margin: 1rem;
+}
+
+.bs-panel-top-right {
+    padding: 0.5rem;
+    border: 3px solid black;
+    box-shadow: 9px -9px 2px black;
+    margin: 1rem;
+}
+
+/**===================*/
+/**                   */
+/**   CARD CONCEPT0   */
+/**                   */
+/**===================*/
+
+
+/**==============*/
+/**              */
+/**   UTILITY    */
+/**              */
+/**==============*/
+
+.brutalist-marquee{
+    border: 3px solid black;
+    word-spacing: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: var(--brutalist_Bungee);
+    font-size: var(--font-size-base);
+    letter-spacing: 0.5rem;
+    margin: 0 auto;
+}
+
+.stroke-red{
+    -webkit-text-stroke: 1px  red;
+}
+
+.stroke-cyan{
+    -webkit-text-stroke: 1px cyan;
+}
+
+.border2{
+    border: 2px solid black
+}
+
+.border4{
+    border: 4px solid black;
+}
+
+
+
+/**==============*/
+/**              */
+/** MEDIA QUERYS */
+/**              */
+/**==============*/

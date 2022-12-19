@@ -1,0 +1,485 @@
+@import "brutalist.css";
+
+/**===========*/
+/**           */
+/**   RESET   */
+/**           */
+/**===========*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+/**==========*/
+/**          */
+/**   BASE   */
+/**          */
+/**==========*/
+/* Fluid font size variables, for browsers that support clamp */
+@supports (font-size: clamp(1rem, 1vw, 1rem)) {
+    :root {
+        --font-size-sm: clamp(0.8rem, -0.18vw + 0.84rem, 0.7rem);
+        --font-size-base: clamp(1rem, -0.11vw + 1.03rem, 0.94rem);
+        --font-size-md: clamp(1.25rem, 0vw + 1.25rem, 1.25rem);
+        --font-size-lg: clamp(1.56rem, 0.19vw + 1.52rem, 1.67rem);
+        --font-size-xl: clamp(1.95rem, 0.49vw + 1.83rem, 2.22rem);
+        --font-size-xxl: clamp(2.44rem, 0.94vw + 2.21rem, 2.96rem);
+        --font-size-xxxl: clamp(3.05rem, 1.63vw + 2.65rem, 3.95rem);
+    }
+}
+
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+    :root {
+        --font-size-sm: 0.8rem;
+        --font-size-base: 1rem;
+        --font-size-md: 1.25rem;
+        --font-size-lg: 1.56rem;
+        --font-size-xl: 1.95rem;
+        --font-size-xxl: 2.44rem;
+        --font-size-xxxl: 3.05rem;
+    }
+
+    @media screen and (min-width: 1280px) {
+        :root {
+            --font-size-sm: 0.7rem;
+            --font-size-base: 0.94rem;
+            --font-size-md: 1.25rem;
+            --font-size-lg: 1.67rem;
+            --font-size-xl: 2.22rem;
+            --font-size-xxl: 2.96rem;
+            --font-size-xxxl: 3.95rem;
+        }
+    }
+}
+
+:root {
+    --ReemKufi: ReemKufi-Regular;
+}
+
+@font-face {
+    font-family: ReemKufi-Regular;
+    src: url(src/fonts/ReemKufi-Regular.ttf);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-family: var(--ReemKufi);
+    font-size: var(--font-size-lg);
+}
+
+section {
+    min-height: 100vh;
+}
+
+main {
+    max-width: 75rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+blockquote {
+    margin-left: 2.5rem;
+    background-color: rgb(202, 241, 241);
+    border-left: 5px solid rgb(0, 102, 133);
+    display: inline-block;
+    padding: 1rem;
+    font-style: italic;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: var(--font-size-md);
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.6;
+    font-family: "Poppins";
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: var(--font-size-md);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--ReemKufi);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--font-size-xxxl);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: var(--font-size-xxl);
+}
+
+h3 {
+    font-size: var(--font-size-xl);
+}
+
+h4 {
+    font-size: var(--font-size-md);
+}
+
+small {
+    font-size: var(--font-size-md);
+    font-style: italic;
+    word-spacing: 0.2rem;
+}
+
+/**==============*/
+/**              */
+/**   BLOK NAV   */
+/**              */
+/**==============*/
+
+.navRow {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navRow-center {
+    display: flex;
+    justify-content: center;
+}
+
+.navRow-flend {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navRow-SPar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navRow-SPeve {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navRow-SPbt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navColumn-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navColumn-flend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/**==================*/
+/**                  */
+/**   BLOK CONTENT   */
+/**                  */
+/**==================*/
+
+.blok{
+    margin-inline: 1rem;
+}
+
+.blokRow {
+    display: flex;
+    justify-content: flex-start;
+    gap:1rem;
+    margin-inline: 1rem;
+}
+
+.blokRow-center {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-inline: 1rem;
+}
+
+.blokRow-flend {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-inline: 1rem;
+}
+
+.blokRow-SPar {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-inline: 1rem;
+}
+
+.blokRow-SPeve {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-inline: 1rem;
+}
+
+.blokRow-SPbt {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-inline: 1rem;
+}
+
+.blokColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-inline: 1rem;
+}
+
+.blokColumn-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 1rem;
+}
+
+.blokColumn-flend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-inline: 1rem;
+}
+
+/**=================*/
+/**                 */
+/**   BLOK FOOTER   */
+/**                 */
+/**=================*/
+
+.footerRow {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.footerRow-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerRow-flend {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.footerRow-SPar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerRow-SPeve {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footerRow-SPbt {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footerColumn-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerColumn-flend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/**=============*/
+/**             */
+/**   UTILITY   */
+/**             */
+/**=============*/
+
+.super-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time12 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.time1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.time3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.time4 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.time6 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.time7 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.time9 {
+    display: flex;
+    align-items: center;
+}
+
+.time10 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.self-flend {
+    display: flex;
+    align-self: flex-end;
+}
+
+.self-flstart {
+    display: flex;
+    align-self: flex-start;
+}
+
+.self-center {
+    display: flex;
+    align-self: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.img-logo{
+    width: clamp(2.5rem, 2vw + 1.5rem, 6rem);
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**=================*/
+/**                 */
+/**   MEDIA QUERY   */
+/**                 */
+/**=================*/
