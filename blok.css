@@ -82,11 +82,17 @@ select {
 
 :root {
     --ReemKufi: ReemKufi-Regular;
+    --Josefina-sans: Josefina-sans;
 }
 
 @font-face {
     font-family: ReemKufi-Regular;
     src: url(src/fonts/ReemKufi-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefina-sans;
+    src: url(src/fonts/Josefina-sans.ttf);
 }
 
 html {
@@ -134,10 +140,10 @@ a:hover {
 
 p {
     line-height: 2;
-    font-family: "Poppins";
+    font-family: var(--Josefina-sans);
     margin-top: 0;
     margin-bottom: 1rem;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-lg);
 }
 
 h1,
