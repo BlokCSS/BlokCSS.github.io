@@ -32,6 +32,7 @@
     --brutalist_Kalendar: KalendarblattGrotesk;
     --brutalist_RammettoOne-Regular: RammettoOne-Regular;
     --brutalist_KellySlab: KellySlab-Regular;
+    --brutalist_Righteous: Righteous-Regular
 }
 
 /* Fluid font size variables, for browsers that support clamp */
@@ -105,6 +106,11 @@
     src: url(src/fonts/KellySlab-Regular.ttf);
 }
 
+@font-face {
+    font-family: Righteous-Regular;
+    src: url(src/fonts/Righteous-Regular.ttf);
+}
+
 
 /**==================*/
 /**                  */
@@ -146,6 +152,10 @@
 
 .bs-fontKelly {
     font-family: var(--brutalist_KellySlab);
+}
+
+.bs-fontRighteous{
+    font-family: var(--brutalist_Righteous);
 }
 
 /**=================*/
@@ -367,6 +377,7 @@
     padding: 1.7rem;
     margin: -1.5rem;
     font-size: var(--font-size-md);
+    font-family: var(--brutalist_Righteous);
 }
 
 @media (width <= 423px) {
