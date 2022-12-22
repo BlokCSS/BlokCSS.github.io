@@ -103,6 +103,7 @@ body {
 
 section {
     min-height: 100vh;
+    width: 100%;
 }
 
 main {
@@ -183,49 +184,64 @@ small {
 .navRow {
     display: flex;
     justify-content: flex-start;
+    gap: 1rem;
+    padding-left: 1rem;
 }
 
 .navRow-center {
     display: flex;
     justify-content: center;
+    gap: 1rem;
+    padding-inline: 1rem;
 }
 
 .navRow-flend {
     display: flex;
     justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 1rem;
 }
 
 .navRow-SPar {
     display: flex;
     justify-content: space-around;
+    gap: 1rem;
 }
 
 .navRow-SPeve {
     display: flex;
     justify-content: space-evenly;
+    gap: 1rem;
 }
 
 .navRow-SPbt {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    padding-inline: 1rem;
 }
 
 .navColumn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
+    padding-left: 1rem;
 }
 
 .navColumn-center {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 
 .navColumn-flend {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 1rem;
+    padding-right: 1rem;
 }
 
 /**==================*/
@@ -242,49 +258,47 @@ small {
     display: flex;
     justify-content: flex-start;
     gap:1rem;
-    margin-inline: 1rem;
+    padding-left: 1rem;
 }
 
 .blokRow-center {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-inline: 1rem;
+    margin-bottom: 1rem;
 }
 
 .blokRow-flend {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-    margin-inline: 1rem;
+    padding-right: 1rem;
 }
 
 .blokRow-SPar {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
-    margin-inline: 1rem;
 }
 
 .blokRow-SPeve {
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
-    margin-inline: 1rem;
 }
 
 .blokRow-SPbt {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    margin-inline: 1rem;
+    padding-inline: 1rem;
 }
 
 .blokColumn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-inline: 1rem;
+    padding-left: 1rem;
 }
 
 .blokColumn-center {
@@ -298,7 +312,7 @@ small {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-inline: 1rem;
+    padding-right: 1rem;
 }
 
 /**=================*/
@@ -311,18 +325,22 @@ small {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    padding-left: 1rem;
+    gap: 1rem;
 }
 
 .footerRow-center {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .footerRow-flend {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    padding-right: 1rem;
 }
 
 .footerRow-SPar {
@@ -341,12 +359,14 @@ small {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-inline: 1rem;
 }
 
 .footerColumn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 1rem;
 }
 
 .footerColumn-center {
@@ -359,6 +379,7 @@ small {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding-right: 1rem;
 }
 
 /**=============*/
@@ -470,12 +491,6 @@ small {
 
 .img-logo{
     width: clamp(2.5rem, 2vw + 1.5rem, 6rem);
-}
-
-.center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /**=================*/
