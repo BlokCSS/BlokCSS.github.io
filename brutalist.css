@@ -216,7 +216,6 @@
     background-color: #000000;
 }
 
-/* COLOR FOR LOGO */
 .bs-bgGolden {
     background-color: #FCC419;
 }
@@ -276,13 +275,6 @@
     padding-inline: 0.5rem;
     gap: 1.5rem;
     margin: 1rem;
-}
-
-@media (width <= 425px) {
-    .brutalist-nav4{
-        border-width: 0px;
-    }
-    
 }
 
 .brutalist-nav5 {
@@ -359,15 +351,13 @@
 
 .brutalist {
     border: 3px solid black;
-    font-family: var(--brutalist_RammettoOne-Regular);
-    box-shadow: 6px 5px;
+    box-shadow: 5px 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     margin-bottom: 1.5rem;
     width: 10rem;
-
 }
 
 .brutalist a {
@@ -376,14 +366,21 @@
     z-index: 1;
     padding: 1.7rem;
     margin: -1.5rem;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
+}
 
+@media (width <= 423px) {
+
+    .brutalist a{
+        font-size: var(--font-size-sm);
+        font-weight: bolder;
+    }
 }
 
 .brutalist a:hover {
     color: black;
     text-decoration: none;
-    -webkit-text-stroke: 1px;
+    -webkit-text-stroke: 0.5px;
 }
 
 .btn-gold {
