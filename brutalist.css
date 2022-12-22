@@ -258,12 +258,14 @@
 .brutalist-nav2 {
     border-style: solid;
     border-color: rgb(31, 28, 28);
+    border-width: 15px 5px 5px 5px;
     border-radius: 100px;
     display: flex;
     padding-inline: 1.5rem;
     gap: 1rem;
     margin: 1rem;
 }
+
 
 .brutalist-nav3 {
     border-style: solid;
@@ -307,6 +309,39 @@
     gap: 1.5rem;
     margin: 1rem;
 }
+
+@media  (width <= 423px){
+    .brutalist-nav1{
+        border-width: 1px;
+        padding: 1rem;
+    }
+
+    .brutalist-nav2{
+        border-width: 1px;
+        padding: 1rem;
+    }
+
+    .brutalist-nav3{
+        border-width: 1px;
+        padding: 1rem;
+    }
+
+    .brutalist-nav4{
+        border-width: 1px;
+        padding: 1rem;
+    }
+
+    .brutalist-nav5{
+        border-width: 1px;
+        padding: 1rem;
+    }
+
+    .brutalist-nav6{
+        border-width: 1px;
+        padding: 1rem;
+    }
+}
+
 
 .brutalist-nav1 a,
 .brutalist-nav2 a,
