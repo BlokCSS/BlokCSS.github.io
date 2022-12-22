@@ -361,13 +361,13 @@
 
 .brutalist {
     border: 3px solid black;
-    box-shadow: 5px 5px;
+    box-shadow: 6px 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     margin-bottom: 1.5rem;
-    width: 10rem;
+    width: clamp(6rem, 5vw + 7rem, 10rem);
 }
 
 .brutalist a {
